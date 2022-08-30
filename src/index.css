@@ -1,0 +1,70 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+.container {
+  height: 900px;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  align-content: center;
+  margin: 10px 350px;
+}
+
+.email, .password {
+  padding: 10px 0px 10px 2px;
+  margin: 20px 0px 10px 0px;
+  width: 23.5%;
+  border: 2px solid #000;
+}
+
+.btn-in {
+  padding: 10px 0px;
+  width: 24%;
+  margin: 0px 0px 30px 0px;
+  border: 2px solid #000;
+  background-color: blue;
+  color: #FFF;
+}
+
+.link1 {
+  margin-top: 20px;
+}
+
+.link1 a, .link a {
+  text-decoration: none;
+  color: blue;
+}
+
+.home {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn-in1 {
+ margin-left: 400px;
+ padding: 15px 80px;
+ color: blue;
+ 
+}
+a {
+  text-decoration: none;
+}
+
+.btnn {
+  margin: 5px 100px 0px 70%;
+}
+
+.editor {
+  margin-left: 50px;
+}
+
+.markd {
+  width: 80vw;
+}
