@@ -1,36 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
 body {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0; 
+  font-family: 'Acme', sans-serif;
   
 }
 
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#light {
+  background: rgb(226, 225, 225);
+
+}
+
+#dark {
+  background: rgb(14, 11, 11);
+
+}
+
+.switch {
+  height: 10px;
+  width: 10px;
+  
+}
 
 .container {
-  height: 900px;
-  justify-content: center;
-  align-items: center;
-  width: 1000px;
-  align-content: center;
-  margin: 10px 350px;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  margin: 10rem 0 ;
+  
+}
+.intro h2 {
+  font-size: 22px;
+  color: rgb(121, 49, 222);
+}
+
+.intro h4 {
+   font-size: 20px; 
+}
+
+
+#light .intro h4 {
+  color: rgb(14, 11, 11);
+}
+
+#dark .intro h4 {
+  color: #FFF;
+}
+
+.intro-btn {
+    padding: 4px 12px;
+}
+
+.intro-btn:hover {
+  
+}
+
+.log-in {
+  box-shadow: 0 0.5rem 1rem #0003;
+  padding: 40px 20px;
+}
+
+#dark .log-in {
+  color: #FFF;
+  box-shadow: 0 0.5rem 1rem rgba(177, 167, 167, 0.2);
+
 }
 
 .email, .password {
-  padding: 10px 0px 10px 2px;
-  margin: 20px 0px 10px 0px;
-  width: 23.5%;
-  border: 2px solid #000;
+  padding: 20px 2px;
+  margin: 20px 0px 7px 0px;
+  width: 30vw;
+  border-radius: 12px;
+  font-size: 14px;
 }
 
 .btn-in {
   padding: 10px 0px;
-  width: 24%;
+  width: 32vw;
   margin: 0px 0px 30px 0px;
-  border: 2px solid #000;
-  background-color: blue;
+  background-color: rgb(121, 49, 222);
   color: #FFF;
+  border-radius: 10px;
+  transition-property: transform opacity background-color;
 }
 
+.btn-in:hover {
+   opacity: 0.7; 
+   transform: translateY(10%);
+}
+
+/*
+.google-btn {
+  background-color: rgb(121, 49, 222);
+}
+*/
 .link1 {
   margin-top: 20px;
 }

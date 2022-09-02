@@ -1,11 +1,14 @@
 import React, {useState} from "react";
 import { Form, Button, Alert } from 'react-bootstrap'
 import GoogleButton from "react-google-button";
+import { ImSwitch } from "react-icons/im";
 import { Link, useNavigate } from "react-router-dom";
 import { UserAuth } from "../context/AuthContext";
+import ReactSwitch from 'react-switch';
 
 
-const Login = () => {
+
+const Login = ({toggleTheme, theme}) => {
 
    
 
@@ -39,11 +42,19 @@ const Login = () => {
     }
   return (
     <section className="container">
-        <div>
-            <h3>Want to start writing. 
-                <br /> Kindly Log in</h3>
+       
+        <div className="intro">
+            <h2>Markdown 2.0</h2>
+            <h4>Markdown 2.0 helps you as a technical writer <br/> get closer to your writings <br />Practice your skills as a creator.
+               <br /> Other features coming up 🎁 </h4>
+            <a href="https://pep.vercel.app/" target="_blank"> <button className="intro-btn">  Click to connect with me and my writings</button></a>
+        </div>
+
+        
+        <div className="log-in">
+            
                 {error && <Alert variant="danger">{error}</Alert>}
-            <form onSubmit = {handleSubmit}>
+            <form onSubmit = {handleSubmit} className = 'input-form'>
                 
                     <input
                         type="email"
@@ -65,9 +76,9 @@ const Login = () => {
               
 
                 <div>
-                    <Button className="btn-in" variant="primary" type="Submit">
+                    <button className="btn-in" variant="primary" type="Submit">
                     Log In
-                    </Button>
+                    </button>
                 </div>
             </form>
                 
@@ -78,11 +89,13 @@ const Login = () => {
                         onClick={handleGoogleSignIn}                        
                     />
                 </div>
-        </div>
-            <div className="link1">
+                <div className="link1">
                 Don't have an account? <Link to = '/signup'> Sign up</Link>
             </div>          
        
+        </div>
+        
+    
     </section>
   )
 }
