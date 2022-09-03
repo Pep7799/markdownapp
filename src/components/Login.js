@@ -52,8 +52,7 @@ const Login = ({toggleTheme, theme}) => {
 
         
         <div className="log-in">
-            
-                {error && <Alert variant="danger">{error}</Alert>}
+        {error && <Alert variant="danger">{error}</Alert>}
             <form onSubmit = {handleSubmit} className = 'input-form'>
                 
                     <input
@@ -84,9 +83,9 @@ const Login = ({toggleTheme, theme}) => {
                 
                 <div>
                     <GoogleButton
-                        type="dark"
-                        className="google-btn"
-                        onClick={handleGoogleSignIn}                        
+                        type="light"                        
+                        onClick={handleGoogleSignIn}  
+                        className ="custom-btn"                      
                     />
                 </div>
                 <div className="link1">

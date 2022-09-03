@@ -26,11 +26,23 @@ body {
 
 }
 
-.switch {
-  height: 10px;
+.switch-container {
+  height: .5px;
   width: 10px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin: 1px 500px;
+ 
   
 }
+
+.switch {
+  width: 2px;
+  height: 2px;
+  margin-top: 10px;
+}
+
 
 .container {
   justify-content: space-around;
@@ -70,6 +82,16 @@ body {
   padding: 40px 20px;
 }
 
+.error {
+  height: 5%;
+  width: 100%;
+  background: red;
+}
+.error-alert {
+ 
+  font-size: 10px;
+}
+
 #dark .log-in {
   color: #FFF;
   box-shadow: 0 0.5rem 1rem rgba(177, 167, 167, 0.2);
@@ -91,19 +113,28 @@ body {
   background-color: rgb(121, 49, 222);
   color: #FFF;
   border-radius: 10px;
+  opacity: 0.9;
   transition-property: transform opacity background-color;
 }
 
 .btn-in:hover {
-   opacity: 0.7; 
+   opacity: 1; 
    transform: translateY(10%);
 }
 
-/*
-.google-btn {
-  background-color: rgb(121, 49, 222);
+.custom-btn {
+  padding: 5px 10px;
+  opacity: 0.9;
+  text-transform: uppercase;
+  transition-property: transform opacity;
+  font-weight: bold;
 }
-*/
+
+.custom-btn:hover {
+  transform: scale(1.05);
+  transform: translateY(10%);
+  opacity: 1;
+}
 .link1 {
   margin-top: 20px;
 }

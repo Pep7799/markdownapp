@@ -7,7 +7,7 @@ import { AuthContextProvider } from "./context/AuthContext";
 import ProtectedRoute from './components/ProtectedRoute'
 import Home from "./components/Home";
 import { createContext, useState } from 'react';
-import ReactSwitch from 'react-switch';
+import Switch from 'react-switch';
 
 export const ThemeContext = createContext(null)
 
@@ -19,9 +19,21 @@ function App() {
   }
   return (
     <ThemeContext.Provider value = {{theme, toggleTheme}} >
-      <div className="switch">
-          <label> {theme === "light" ? "Light Mode" : "Dark Mode"}</label>
-          <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} />
+      <div className="switch-container">
+         {/* <label> {theme === "light" ? "Light Mode" : "Dark Mode"}</label> */}
+          <Switch
+            checked={theme === "dark"}
+            onChange={toggleTheme}
+            onColor="#86d3ff"
+            onHandleColor="#2693e6"
+            handleDiameter={10}
+            uncheckedIcon={false}
+            checkedIcon={false}
+            boxShadow="0px 1px 5px rgba(0, 0, 0, 0.6)"
+            activeBoxShadow="0px 0px 1px 10px rgba(0, 0, 0, 0.2)"
+            height={20}
+            width={28}
+          />
   </div>
       <div id = {theme} className= "App">
       
