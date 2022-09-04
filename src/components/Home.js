@@ -18,12 +18,12 @@ const Home = () => {
   return (
     <section>
     <div className='home'>
-       Hello, welcome <br /> {user && user.email}
+       Hi, welcome <br /> {user && user.email}
     </div>
     <br />
     <br />
     <div>
-      <button className='btn-in1'><Link to = '/editor'>Create New</Link> </button>
+      <Link to = '/editor'><button className='btn-home'>Create New </button></Link>
     </div>
    
     </section>

@@ -20,30 +20,34 @@ export default function Editor () {
     }
 
   return (
+
     <div className='editor'>
-             <div>
-      <button className='btn-in btnn' onClick={handleOut} variant='primary'>Log out</button>
-    </div>
+      <div>
+        <div className='editor-btn'>
+          <button className='btn-in btnn' onClick={handleOut} variant='primary'>Log out</button>
+        </div>
+        <div>
        
-           <h1> Markdown Editor </h1>
-           <article>
+          <h1> Markdown Editor </h1>
+          <article>
             <label htmlFor="markdown"></label>
             <textarea name="textarea" className='markd' id="markdown" cols="30" rows="10" placeholder='Type...' 
             value={text} 
             onChange= {(e) =>setText(e.target.value)}/>
-            </article>
+          </article>
+        </div>
            
-       
+      </div>
 
         {/*Content*/}
 
 
-            <div>
+      <div className='markdown-output'>
         
-            <h1>Output here</h1>
-            <ReactMarkdown className='space' children={text}/>
+        <h1 className='output'>Output here</h1>
+        <ReactMarkdown className='space' children={text}/>
 
-            </div>
+      </div>
 
      
         

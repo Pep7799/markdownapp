@@ -28,7 +28,7 @@ const Signup = () => {
         }
     };
   return (
-    <section className="container">
+    <section className="signup-container">
         <div>
             <h2>Don't have an account?
                 <br /> Sign up</h2>
@@ -61,12 +61,13 @@ const Signup = () => {
                     </button>
                 </div>
                 </form>
+                <div className="link">
+                Already have an account?<Link to = '/'> Log In</Link>
+            </div>  
               
                 
             </div>
-            <div className="link">
-                Already have an account?<Link to = '/'> Log In</Link>
-            </div>          
+                    
        
     </section>
   )

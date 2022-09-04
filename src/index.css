@@ -140,6 +140,13 @@ body {
   color: blue;
 }
 
+#dark .link{
+  color: #FFF;
+}
+
+/*Home*/
+
+
 .home {
   justify-content: center;
   display: flex;
@@ -147,24 +154,115 @@ body {
   margin-top: 20px;
 }
 
-.btn-in1 {
+.btn-home {
  margin-left: 400px;
  padding: 15px 80px;
- color: blue;
+ color: rgb(121, 49, 222);
  
 }
+
+.btn-home:hover {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
 }
 
+#light .home {
+  color: rgb(14, 11, 11);
+}
+
+#dark .home{
+  color: #FFF;
+}
+#light .btn-home {
+  background: black;
+}
+
+
+
+
+/*Sign up*/
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#dark .signup-container{
+  color: #FFF;
+}
+
+
+/* Password reset*/
+.password-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.account-link {
+  margin-top: 20px;
+}
+
+.email-two {
+  padding: 5px 2px;
+  margin: 10px 0px;
+  width: 20vw;
+  border-radius: 12px;
+  font-size: 14px;
+} 
+
+.btn-in-password {
+  padding: 2px 0px;
+  width: 12vw;
+  margin: 0px 0px 30px 0px;
+  background-color: rgb(121, 49, 222);
+  color: #FFF;
+  border-radius: 10px;
+  opacity: 0.9;
+  transition-property: transform opacity background-color;
+}
+
+.btn-in-password:hover {
+   opacity: 1; 
+   transform: translateY(7%);
+}
+
+#dark .password-container{
+  color: #FFF;
+}
+
+/*Editor*/
+
+.editor-btn{
+  margin-top: 0px;
+}
+
+
 .btnn {
-  margin: 5px 100px 0px 70%;
+ width: 10vw;
 }
 
 .editor {
-  margin-left: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  overflow: auto;
 }
 
 .markd {
-  width: 80vw;
+  width: 40vw;
+  height: 70vh;
+}
+
+.markdown-output{
+  margin: 10vh;
+
+}
+
+.output {
+  text-decoration: underline;
 }
