@@ -8,6 +8,7 @@ import ProtectedRoute from './components/ProtectedRoute'
 import Home from "./components/Home";
 import { createContext, useState } from 'react';
 import Switch from 'react-switch';
+import ForgotPassword from './components/ForgotPassword';
 
 export const ThemeContext = createContext(null)
 
@@ -44,6 +45,7 @@ function App() {
           <Route path = '/editor' element = {<ProtectedRoute><Editor/> </ProtectedRoute>}/>
           <Route path = '/' element = {<Login/>} toggleTheme= {toggleTheme} theme = {theme}/>
           <Route path = '/signup' element = {<Signup/>}/>
+          <Route path="/forgot-password" element={<ForgotPassword/>} />
         
         </Routes>
         

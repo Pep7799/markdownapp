@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0; 
   font-family: 'Acme', sans-serif;
+  overflow: hidden;
   
 }
 
@@ -70,11 +71,15 @@ body {
 }
 
 .intro-btn {
-    padding: 4px 12px;
+    padding: 4px 18px 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: transform;
 }
 
 .intro-btn:hover {
-  
+  transform: translateY(6%);
+  cursor: pointer;
 }
 
 .log-in {
@@ -82,15 +87,6 @@ body {
   padding: 40px 20px;
 }
 
-.error {
-  height: 5%;
-  width: 100%;
-  background: red;
-}
-.error-alert {
- 
-  font-size: 10px;
-}
 
 #dark .log-in {
   color: #FFF;
@@ -119,7 +115,7 @@ body {
 
 .btn-in:hover {
    opacity: 1; 
-   transform: translateY(10%);
+   transform: translateY(7%);
 }
 
 .custom-btn {
@@ -132,7 +128,7 @@ body {
 
 .custom-btn:hover {
   transform: scale(1.05);
-  transform: translateY(10%);
+  transform: translateY(7%);
   opacity: 1;
 }
 .link1 {

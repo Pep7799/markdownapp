@@ -1,5 +1,6 @@
 import React, {useState} from "react";
-import { Form, Button, Alert } from 'react-bootstrap'
+import { Form, Button} from 'react-bootstrap'
+import Alert from 'react-bootstrap/Alert'
 import GoogleButton from "react-google-button";
 import { ImSwitch } from "react-icons/im";
 import { Link, useNavigate } from "react-router-dom";
@@ -80,6 +81,10 @@ const Login = ({toggleTheme, theme}) => {
                     </button>
                 </div>
             </form>
+
+            <div className="w-100 text-center mt-3">
+            <Link to="/forgot-password">Forgot Password?</Link>
+          </div>
                 
                 <div>
                     <GoogleButton
@@ -89,7 +94,7 @@ const Login = ({toggleTheme, theme}) => {
                     />
                 </div>
                 <div className="link1">
-                Don't have an account? <Link to = '/signup'> Sign up</Link>
+                Don't have an account? <Link to = '/signup' className="sign-link"> Sign up</Link>
             </div>          
        
         </div>
