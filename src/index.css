@@ -173,8 +173,8 @@ a {
   color: rgb(14, 11, 11);
 }
 
-#dark .home{
-  color: #FFF;
+#dark .btn-home{
+  background: #FFF;
 }
 #light .btn-home {
   background: black;
@@ -250,7 +250,7 @@ a {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  overflow: auto;
+  overflow-x: visible;
 }
 
 .markd {
@@ -265,4 +265,13 @@ a {
 
 .output {
   text-decoration: underline;
+}
+
+
+#dark .editor{
+  color: #FFF;
+  background-color: rgb(23, 22, 22) ;
+}
+#light .btn-home {
+  color: #FFF;
 }
