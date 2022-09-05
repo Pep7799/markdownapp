@@ -48,7 +48,7 @@ const Login = ({toggleTheme, theme}) => {
             <h2>Markdown 2.0</h2>
             <h4>Markdown 2.0 helps you as a technical writer <br/> get closer to your writings <br />Practice your skills as a creator.
                <br /> Other features coming up 🎁 </h4>
-            <a href="https://pep.vercel.app/" target="_blank"> <button className="intro-btn">  Click to connect with me and my writings</button></a>
+            <a href="https://supergirlp.hashnode.dev/" target="_blank"> <button className="intro-btn">  Click to connect with me and my writings</button></a>
         </div>
 
         
