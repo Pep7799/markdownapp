@@ -22,7 +22,7 @@ const Home = () => {
     </div>
     <br />
     <br />
-    <div>
+    <div className='home-btn'>
       <Link to = '/editor'><button className='btn-home'>Create New </button></Link>
     </div>
    

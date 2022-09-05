@@ -26,15 +26,19 @@ export default function Editor () {
         <div className='editor-btn'>
           <button className='btn-in btnn' onClick={handleOut} variant='primary'>Log out</button>
         </div>
-        <div>
-       
-          <h1> Markdown Editor </h1>
-          <article>
-            <label htmlFor="markdown"></label>
-            <textarea name="textarea" className='markd' id="markdown" cols="30" rows="10" placeholder='Type...' 
-            value={text} 
-            onChange= {(e) =>setText(e.target.value)}/>
-          </article>
+
+        <div className='markdown-container'> 
+          <div className='markdown-main'>      
+            <h1> Markdown Editor </h1>
+          </div>
+          <div className='markdown-article'>
+            <article>
+              <label htmlFor="markdown"></label>
+              <textarea name="textarea" className='markd' id="markdown" cols="30" rows="10" placeholder='Type...' 
+              value={text} 
+              onChange= {(e) =>setText(e.target.value)}/>
+            </article>
+          </div>
         </div>
            
       </div>
@@ -43,9 +47,13 @@ export default function Editor () {
 
 
       <div className='markdown-output'>
-        
-        <h1 className='output'>Output here</h1>
-        <ReactMarkdown className='space' children={text}/>
+        <div>        
+          <h1 className='output'>Output here</h1>
+        </div>
+        <br />
+        <div className='markdown-textarea'>
+         <ReactMarkdown className='space' children={text}/>
+        </div>
 
       </div>
 

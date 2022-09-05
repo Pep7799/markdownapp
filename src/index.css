@@ -5,8 +5,21 @@ body {
   margin: 0;
   padding: 0; 
   font-family: 'Acme', sans-serif;
+  background:  rgb(226, 225, 225);
   
 }
+
+
+#light body {
+  background: rgb(226, 225, 225);
+
+}
+
+#dark body {
+  background: rgb(14, 11, 11);
+
+}
+
 .App {
   width: 100vw;
   height: 100vh;
@@ -45,18 +58,39 @@ body {
   margin-top: 10px;
 }
 
+
+@media screen and (max-width: 768px) {
+  
+.switch-container {
+  height: .5px;
+  width: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 1px auto;
+ 
+  
+}
+
+.switch {
+  width: 2px;
+  height: 2px;
+  margin-top: 10px;
+}
+}
+
 /*Log in*/
 
 .container {
   justify-content: space-around;
   display: flex;
   flex-direction: row;
-  margin: 10rem 0 ;
   
+ 
 }
 .intro h2 {
   font-size: 22px;
   color: rgb(121, 49, 222);
+ 
 }
 
 .intro h4 {
@@ -97,7 +131,7 @@ body {
 }
 
 .email, .password {
-  padding: 20px 2px;
+  padding: 10px 2px;
   margin: 20px 0px 7px 0px;
   width: 30vw;
   border-radius: 12px;
@@ -118,6 +152,7 @@ body {
 .btn-in:hover {
    opacity: 1; 
    transform: translateY(7%);
+   cursor: pointer;
 }
 
 .custom-btn {
@@ -161,7 +196,7 @@ body {
   justify-content: space-around;
   display: flex;
   flex-direction: column;
-  margin: 10rem 0 ;
+  margin: 2rem 0 ;
   align-items: center;
   
 }
@@ -169,7 +204,7 @@ body {
 .intro h2 {
   font-size: 20px;
   color: rgb(121, 49, 222);
-  margin-top: 100px;
+  margin-top: 20px;
 }
 .intro-btn {
   padding: 4px 12px 15px;
@@ -185,6 +220,24 @@ body {
   margin-right: 50px;
 }
 
+.email, .password {
+  padding: 10px 2px;
+  margin: 20px 0px 7px 0px;
+  width: 40vw;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.btn-in {
+  padding: 10px 0px;
+  width: 42vw;
+  margin: 0px 0px 30px 0px;
+  background-color: rgb(121, 49, 222);
+  color: #FFF;
+  border-radius: 10px;
+  opacity: 0.9;
+  transition-property: transform opacity background-color;
+}
 
 }
 
@@ -197,9 +250,13 @@ body {
   align-items: center;
   margin-top: 20px;
 }
+.home-btn {
+  display: flex;
+  justify-content: center;
+}
 
 .btn-home {
- margin-left: 400px;
+
  padding: 15px 80px;
  color: rgb(121, 49, 222);
  
@@ -226,7 +283,6 @@ a {
 #light .btn-home {
   background: black;
 }
-
 
 
 
@@ -264,7 +320,7 @@ a {
 
 .btn-in-password {
   padding: 2px 0px;
-  width: 12vw;
+  width: 22vw;
   margin: 0px 0px 30px 0px;
   background-color: rgb(121, 49, 222);
   color: #FFF;
@@ -282,7 +338,35 @@ a {
   color: #FFF;
 }
 
+@media screen and (max-width: 768px) {
+  .email-two {
+    padding: 5px 2px;
+    margin: 10px 0px;
+    width: 30vw;
+    border-radius: 12px;
+    font-size: 14px;
+  } 
+  
+  .btn-in-password {
+    padding: 2px 0px;
+    width: 32vw;
+    margin: 0px 0px 30px 0px;
+    background-color: rgb(121, 49, 222);
+    color: #FFF;
+    border-radius: 10px;
+    opacity: 0.9;
+    transition-property: transform opacity background-color;
+  }
+}
+
+
 /*Editor*/
+
+.editor {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
 
 .editor-btn{
   margin-top: 0px;
@@ -293,12 +377,6 @@ a {
  width: 10vw;
 }
 
-.editor {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  overflow-x: visible;
-}
 
 .markd {
   width: 40vw;
@@ -321,4 +399,39 @@ a {
 }
 #light .btn-home {
   color: #FFF;
+}
+
+@media screen and (max-width: 768px) {
+  .editor {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    
+  }
+
+  .markdown-container{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  .markdown-output{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+  
+  } 
+  .markdown-textarea {
+    width: 40vw;
+    
+    
+  }
+  .btnn {
+    padding: 8px 15px;
+    margin: 0 3px;
+  }
 }
